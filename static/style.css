@@ -13,20 +13,24 @@
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
-body {
+section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	min-height: 100vh;
-	background: url("background.jpg") no-repeat;
+	background: url("bg.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
-	
+	animation: animateBg 5s linear infinite;
 	
 	
 }
-
-
+@keyframes animateBg {
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
 
 
 
